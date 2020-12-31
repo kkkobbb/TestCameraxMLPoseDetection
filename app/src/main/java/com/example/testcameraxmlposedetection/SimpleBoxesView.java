@@ -172,7 +172,7 @@ public class SimpleBoxesView extends View {
      * @return 距離
      */
     private float distance(final PointF p, final PointF q) {
-        return (float) Math.sqrt(Math.pow(p.x - q.x, 2) + Math.pow(p.y - q.y, 2));
+        return (float) Math.hypot(p.x - q.x, p.y - q.y);
     }
 
     /**
